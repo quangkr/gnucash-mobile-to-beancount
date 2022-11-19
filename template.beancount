@@ -1,4 +1,6 @@
 option "operating_currency" "VND"
+option "render_commas" "true"
+
 option "name_assets" "Tài-sản"
 option "name_liabilities" "Nợ"
 option "name_equity" "Equity"
