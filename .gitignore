@@ -1,0 +1,3 @@
+*.beancount
+*.csv
+!template.beancount

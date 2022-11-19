@@ -1,0 +1,9 @@
+option "operating_currency" "VND"
+option "name_assets" "Tài-sản"
+option "name_liabilities" "Nợ"
+option "name_equity" "Equity"
+option "name_income" "Thu-nhập"
+option "name_expenses" "Chi-tiêu"
+
+plugin "beancount.plugins.auto_accounts"
+
