@@ -2,4 +2,5 @@
 *.csv
 *.gnca
 *.gnucash
+venv/**
 !template.beancount
