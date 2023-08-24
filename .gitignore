@@ -1,3 +1,5 @@
 *.beancount
 *.csv
+*.gnca
+*.gnucash
 !template.beancount
