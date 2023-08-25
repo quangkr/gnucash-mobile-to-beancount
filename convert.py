@@ -12,7 +12,7 @@ def main():
     files = chain(script_path.parent.glob('gnucash/*'), script_path.glob('gnucash/*'))
     filtered_files = filter(lambda f: f.suffix in { '.csv', '.gnca', '.gnucash' }, files)
     input_path = max(filtered_files, key=lambda f: f.stat().st_mtime)
-    with input_path.open(mode='r', newline='') as in_f, template_path.open(mode='r') as tem_f, output_path.open(mode='w') as out_f:
+    with input_path.open(mode='r', encoding='utf-8', newline='') as in_f, template_path.open(mode='r', encoding='utf-8') as tem_f, output_path.open(mode='w', encoding='utf-8') as out_f:
         # copy template over to the output
         out_f.writelines(tem_f)
         # read input CSV, then transform the data
